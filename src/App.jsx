@@ -30,7 +30,6 @@ function App() {
       <Todos todos={todos} />
     </div>
   )
-  )
 }
 
 export default App
