@@ -30,8 +30,7 @@ function App() {
       <Todos todos={todos} />
     </div>
   )
-}
-
+  
 const styles = {
   container: {
     textAlign: 'center',
@@ -40,6 +39,7 @@ const styles = {
   title: {
     fontSize: '36px',
   },
+}
 }
 
 export default App
