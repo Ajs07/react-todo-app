@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Todos from './components/Todos'
 
 function App() {
     /* todos merupakan variable state dan pengaturan nilai awal 0 bisa dilakukan dengan code useState(0). 
@@ -27,11 +28,8 @@ function App() {
   return (
     <div>
       <h1>My Todos List</h1>
-      {/* Method map diperlukan untuk mengambil data dari sebuah Array satu per satu, gunakan method pada {}*/}
-      {todos.map((todo) => {
-        // key={todo.id} seharusnya ditambahkan pada masing-masing elemen dalam sebuah array untuk memberikan identitas yang unik dan membantu React mendeteksi element mana yang telah di-render.
-        return <p key={todo.id}>{todo.title}</p>
-      })}
+      {/*Hanya memanggil komponen Todos dan berikan datanya */}
+      <Todos todos={todos}/>
     </div>
   )
 }
